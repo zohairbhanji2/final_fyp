@@ -1,0 +1,142 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.mainbody {
+    width: 100ch;
+    height: 100vh;
+    overflow-x: hidden; 
+}
+
+.logoimage{
+    width: 7%;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 10vh; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.back-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+.feedback-container {
+    max-width: 70%;
+    width: 40vw;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 90vh;
+    max-height: 500px;
+}
+    
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+}
+    
+.feedback-container label {
+    margin-bottom: 5px;
+}
+
+.feedback-container input,
+.feedback-container textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.feedback-container button {
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-container button:hover {
+    background-color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        width: 120vw; 
+        height: 60vh;
+        padding: 10px;
+    }
+    .feedback-container button {
+        margin-top: 20px;
+    }
+        
+}

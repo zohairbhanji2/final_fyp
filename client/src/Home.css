@@ -1,0 +1,132 @@
+.login-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+
+.login-button {
+  margin: 10px;
+  padding: 10px;  
+}
+
+.transparent-background {
+  border-radius: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  border-bottom: #000000 solid 2px !important;
+  border-top:none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.transparent-background:focus {
+  outline: none; 
+  border-color: rgb(219, 4, 4); 
+}
+
+
+.form-label{
+  margin-left: 10px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-radius: 5px;
+}
+
+.login-form {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-heading {
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #000000;
+  font-family: Arial, sans-serif; 
+  font-weight: bold; 
+}
+
+.styled-link {
+  text-decoration: none;
+  color: #090909;
+  display: block;
+  margin: 10px 0;
+}
+
+.fields{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieds label{
+  margin-bottom: 5px;
+}
+
+.styled-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+
+.visibility-icons {
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  display: flex;
+  cursor: pointer;
+ }
+
+.password-field {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+ }
+
+ .password-field .visibility-icons {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  padding: 8px;
+  cursor: pointer;
+ }
+ 
+
+ 
+.error-message {
+  color: #141414;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    max-width: 90%;
+  }
+
+  .login-logo {
+    width: 80px;
+  }
+
+  .login-heading {
+    font-size: 20px;
+  }
+
+  .styled-link {
+    margin: 5px 0;
+  }
+  .password-field{
+    width: 100%;
+  }
+  
+}
