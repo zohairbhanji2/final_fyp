@@ -169,7 +169,7 @@ const Searchmedicine = () => {
   
   const fetchShopkeepers = async () => {
     try {
-      const response = await fetch('http://192.168.1.15:5000/api/shopkeepers');
+      const response = await fetch('https://final-fyp.onrender.com/api/shopkeepers');
       if (!response.ok) {
         throw new Error('Failed to fetch shopkeepers');
       }

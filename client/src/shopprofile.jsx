@@ -13,7 +13,7 @@ const ShopProfile = () => {
       try {
         const shpEmail = localStorage.getItem('userEmail'); 
         if(shpEmail){
-          const response = await axios.get(`http://192.168.1.15:5000/api/shp/profile?email=${shpEmail}`);
+          const response = await axios.get(`https://final-fyp.onrender.com/api/shp/profile?email=${shpEmail}`);
           setUserData(response.data);
         }
         else{

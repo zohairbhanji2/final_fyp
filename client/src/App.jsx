@@ -33,7 +33,7 @@ function App() {
   const [dataFetched, setDataFetched] = useState(false);
 
   useEffect(() => {
-    fetch("http://192.168.1.15:5000/api/register")
+    fetch("https://final-fyp.onrender.com/api/register")
       .then((res) => {
         if (res.ok) {
           return res.json();

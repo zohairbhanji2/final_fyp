@@ -18,7 +18,7 @@ function LoginAsDoctor() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://192.168.1.15:5000/api/Loginasdoctor', {
+      const response = await axios.post('https://final-fyp.onrender.com/api/Loginasdoctor', {
         email: email,
         password: password,
       

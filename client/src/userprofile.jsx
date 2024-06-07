@@ -12,7 +12,7 @@ const UserProfile = () => {
     const fetchUserProfile = async () => {
       try {
         const userEmail = localStorage.getItem('userEmail'); 
-        const response = await axios.get(`http://192.168.1.15:5000/api/user/profile?email=${userEmail}`);
+        const response = await axios.get(`https://final-fyp.onrender.com/api/user/profile?email=${userEmail}`);
         setUserData(response.data);
       } catch (error) {
         console.error('Error fetching user profile:', error.message);

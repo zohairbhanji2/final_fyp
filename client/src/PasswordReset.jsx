@@ -23,7 +23,7 @@ const PasswordReset = () => {
         }
 
         try {
-            const res = await axios.post(`http://192.168.1.15:5000/api/sendpasswordlink` , {email});
+            const res = await axios.post(`https://final-fyp.onrender.com/api/sendpasswordlink` , {email});
             setMessage('Password reset link sent successfully to your email.');
                         
             if (res.ok) {

@@ -10,7 +10,7 @@ const PrescriptionViewer = ({ userEmail }) => {
   useEffect(() => {
     const fetchPrescriptions = async () => {
       try {
-        const response = await axios.get(`http://192.168.1.15:5000/api/getPrescriptions/${userEmail}`);
+        const response = await axios.get(`https://final-fyp.onrender.com/api/getPrescriptions/${userEmail}`);
         console.log('Prescription data:', response.data);
         // Sort prescriptions in descending order based on date
         const sortedPrescriptions = response.data.sort((a, b) => new Date(b.Date) - new Date(a.Date));

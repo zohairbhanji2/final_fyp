@@ -18,7 +18,7 @@ const ForgotPassword = () => {
   const userValid = async () => {
     try {
       //http://192.168.1.15:3000/api/forgotpassword/${id}/${token}
-      const res = await axios.get(`http://192.168.1.15:5000/api/forgotpassword/${id}/`, {
+      const res = await axios.get(`https://final-fyp.onrender.com/api/forgotpassword/${id}/`, {
         headers: {
           'x-auth-token': localStorage.getItem('resetToken'), // Use your own storage key
         },

@@ -31,7 +31,7 @@ const DoctorDashboard = () => {
     formData.append('email', prescription.email);
   
     try {
-      const response = await axios.post('http://192.168.1.15:5000/api/sendPrescription', prescription);
+      const response = await axios.post('https://final-fyp.onrender.com/api/sendPrescription', prescription);
 
       console.log('Response data:', response.data);
     } catch (error) {

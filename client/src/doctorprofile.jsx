@@ -12,7 +12,7 @@ const DoctorProfile = () => {
     const fetchUserProfile = async () => {
       try {
         const doctorEmail = localStorage.getItem('doctorEmail'); 
-        const response = await axios.get(`http://192.168.1.15:5000/api/doctor/profile?email=${doctorEmail}`);
+        const response = await axios.get(`https://final-fyp.onrender.com/api/doctor/profile?email=${doctorEmail}`);
         setDoctorData(response.data);
       } catch (error) {
         console.error('Error fetching user profile:', error.message);

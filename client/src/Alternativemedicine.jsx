@@ -27,7 +27,7 @@ function AlternativeMedicine() {
     setLoading(true);
   
     try {
-      const response = await fetch(`http://192.168.1.15:5000/api/findSimilarMedicines/${searchTerm}`);
+      const response = await fetch(`https://final-fyp.onrender.com/api/findSimilarMedicines/${searchTerm}`);
       const data = await response.json();
       console.log('Server Response:', data);
   
