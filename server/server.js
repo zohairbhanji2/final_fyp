@@ -699,6 +699,6 @@ app.get('/', (req, res) => {
   res.send('Welcome to the server!');
 });
 
-app.listen(port, "192.168.1.15", () => {
-  console.log(`Server is running on http://192.168.1.15:${port}`);
+app.listen(10000, '0.0.0.0', () => {
+  console.log('Server is running on http://0.0.0.0:10000');
 });
