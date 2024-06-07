@@ -24,7 +24,7 @@ function Feedback() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://192.168.0.105:5000/api/feedback', formData);
+      await axios.post('http://192.168.1.15:5000/api/feedback', formData);
       alert('Feedback submitted successfully!');
       setFormData({
         Name: '',

@@ -343,7 +343,7 @@ app.post("/api/sendpasswordlink", async (req, res) => {
         from: "ritickkumar2224@gmail.com",
         to: email,
         subject: "Sending Email for reset your Password",
-        text: `This link is valid for 2 minutes http://192.168.0.105:5173/resetpassword/${userfind.id}`
+        text: `This link is valid for 2 minutes http://192.168.1.15:5173/resetpassword/${userfind.id}`
       };
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
@@ -699,6 +699,6 @@ app.get('/', (req, res) => {
   res.send('Welcome to the server!');
 });
 
-app.listen(port, "192.168.0.105", () => {
-  console.log(`Server is running on http://192.168.0.105:${port}`);
+app.listen(port, "192.168.1.15", () => {
+  console.log(`Server is running on http://192.168.1.15:${port}`);
 });

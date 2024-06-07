@@ -131,7 +131,7 @@ const Searchmedicine = () => {
       return;
     }
   
-    const websocket = new WebSocket(`ws://192.168.0.105:5001/user?user=${storedUserEmail}`);
+    const websocket = new WebSocket(`ws://192.168.1.15:5001/user?user=${storedUserEmail}`);
   
     websocket.onopen = () => {
       console.log('User WebSocket connected');
@@ -169,7 +169,7 @@ const Searchmedicine = () => {
   
   const fetchShopkeepers = async () => {
     try {
-      const response = await fetch('http://192.168.0.105:5000/api/shopkeepers');
+      const response = await fetch('http://192.168.1.15:5000/api/shopkeepers');
       if (!response.ok) {
         throw new Error('Failed to fetch shopkeepers');
       }

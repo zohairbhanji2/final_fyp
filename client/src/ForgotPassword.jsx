@@ -17,8 +17,8 @@ const ForgotPassword = () => {
 
   const userValid = async () => {
     try {
-      //http://192.168.0.105:3000/api/forgotpassword/${id}/${token}
-      const res = await axios.get(`http://192.168.0.105:5000/api/forgotpassword/${id}/`, {
+      //http://192.168.1.15:3000/api/forgotpassword/${id}/${token}
+      const res = await axios.get(`http://192.168.1.15:5000/api/forgotpassword/${id}/`, {
         headers: {
           'x-auth-token': localStorage.getItem('resetToken'), // Use your own storage key
         },

@@ -33,7 +33,7 @@ function App() {
   const [dataFetched, setDataFetched] = useState(false);
 
   useEffect(() => {
-    fetch("http://192.168.0.105:5000/api/register")
+    fetch("http://192.168.1.15:5000/api/register")
       .then((res) => {
         if (res.ok) {
           return res.json();

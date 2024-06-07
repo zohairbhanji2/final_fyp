@@ -23,7 +23,7 @@ const DRchangepassword = () => {
     e.preventDefault();
     try {
       const doctorEmail = localStorage.getItem('doctorEmail');
-      const response = await axios.post(`http://192.168.0.105:5000/api/DRchangepassword?email=${doctorEmail}`, {
+      const response = await axios.post(`http://192.168.1.15:5000/api/DRchangepassword?email=${doctorEmail}`, {
         email: doctorEmail,
         oldPassword,
         newPassword,
