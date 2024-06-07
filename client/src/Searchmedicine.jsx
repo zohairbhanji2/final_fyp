@@ -131,7 +131,7 @@ const Searchmedicine = () => {
       return;
     }
   
-    const websocket = new WebSocket(`ws://192.168.1.15:5001/user?user=${storedUserEmail}`);
+    const websocket = new WebSocket(`ws://final-fyp.onrender.com/user?user=${storedUserEmail}`);
   
     websocket.onopen = () => {
       console.log('User WebSocket connected');

@@ -21,7 +21,7 @@ const ViewResponses = () => {
       return;
     }
 
-    const websocket = new WebSocket(`ws://192.168.1.15:5001/shopkeeper?user=${storedShopName}`);
+    const websocket = new WebSocket(`ws://final-fyp.onrender.com/shopkeeper?user=${storedShopName}`);
     setWs(websocket);
 
     websocket.onopen = () => {
